@@ -1,0 +1,154 @@
+/* ===============================
+   BLACK - FASHION BRAND WEBSITE
+   Base Theme: White + Orange + Red
+   =============================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body + Background */
+body {
+  background-color: #ffffff; /* White background */
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Navbar */
+header {
+  background-color: #ff6600; /* Orange */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+header nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+header nav a:hover {
+  color: #ff2e2e; /* Red on hover */
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(
+      rgba(255, 102, 0, 0.6),
+      rgba(255, 46, 46, 0.6)
+    ),
+    url("https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1500&q=80")
+      no-repeat center center/cover;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 25px;
+  font-size: 1.1rem;
+}
+
+.hero a {
+  background-color: #ff2e2e;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.hero a:hover {
+  background-color: black;
+}
+
+/* Collections Section */
+#shop {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#shop h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #ff6600;
+}
+
+.collection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(255, 102, 0, 0.3);
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card h4 {
+  color: #ff2e2e;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.card p {
+  color: #555;
+  font-size: 0.9rem;
+  padding: 0 15px 15px;
+}
+
+/* Footer */
+footer {
+  background-color: #ff6600;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+footer .designer {
+  color: #ffd1d1;
+}
