@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black — Style That Speaks</title>
+
+    <!-- Favicon (optional) -->
+    <link rel="icon" href="https://img.icons8.com/ios-filled/50/000000/t-shirt.png" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS CDN (for now) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Colors -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: "#ff6600", /* Orange */
+            },
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="bg-white text-gray-900 font-poppins">
+    <!-- Navbar -->
+    <header class="flex items-center justify-between px-6 py-4 shadow-md">
+      <h1 class="text-2xl font-bold text-brand">BLACK</h1>
+      <nav class="space-x-6 text-sm font-medium">
+        <a href="#" class="hover:text-brand">Home</a>
+        <a href="#" class="hover:text-brand">Shop</a>
+        <a href="#" class="hover:text-brand">About</a>
+        <a href="#" class="hover:text-brand">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="text-center py-20 bg-gray-50"
+      style="background-image: url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1500&q=80'); background-size: cover; background-position: center;"
+    >
+      <div class="bg-black bg-opacity-50 py-20 px-6 text-white">
+        <h2 class="text-4xl font-extrabold mb-4">🖤 Black — Style That Speaks</h2>
+        <p class="max-w-xl mx-auto text-lg">
+          Discover modern, high-quality fashion for men, women, and kids.
+          From casual essentials to statement pieces, <strong>Black</strong>
+          brings you effortless style, comfort, and confidence — all in one place.
+        </p>
+        <a
+          href="#shop"
+          class="inline-block mt-6 px-8 py-3 bg-brand text-white rounded-full shadow-md hover:bg-black transition"
+        >
+          Shop Now
+        </a>
+      </div>
+    </section>
+
+    <!-- Shop Preview -->
+    <section id="shop" class="py-16 px-6 text-center">
+      <h3 class="text-3xl font-bold mb-10">Our Collections</h3>
+      <div class="grid gap-8 md:grid-cols-3">
+        <!-- Men -->
+        <div class="shadow-lg rounded-2xl overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1593032457860-94b8dc8192f7?auto=format&fit=crop&w=800&q=80"
+            alt="Men's Fashion"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-4">
+            <h4 class="font-semibold text-lg">Men’s Wears</h4>
+            <p class="text-sm text-gray-600">Smart, casual, and bold looks for every day.</p>
+          </div>
+        </div>
+
+        <!-- Women -->
+        <div class="shadow-lg rounded-2xl overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=800&q=80"
+            alt="Women's Fashion"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-4">
+            <h4 class="font-semibold text-lg">Women’s Wears</h4>
+            <p class="text-sm text-gray-600">Trendy, elegant, and confident — for every style.</p>
+          </div>
+        </div>
+
+        <!-- Kids -->
+        <div class="shadow-lg rounded-2xl overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1609947017136-3d973c5a5c9b?auto=format&fit=crop&w=800&q=80"
+            alt="Kids Fashion"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-4">
+            <h4 class="font-semibold text-lg">Kids’ Wears</h4>
+            <p class="text-sm text-gray-600">Cute, comfy, and full of personality.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-6 mt-10">
+      <p>&copy; 2025 Black. All rights reserved.</p>
+      <p class="text-sm text-gray-400">Designed with 🖤 by Junior.</p>
+    </footer>
+  </body>
+</html>
