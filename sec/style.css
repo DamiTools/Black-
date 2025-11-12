@@ -152,3 +152,19 @@ footer p {
 footer .designer {
   color: #ffd1d1;
 }
+
+/* Search Bar */
+header input[type="text"] {
+  border: 1px solid #ff6600;
+  background: #fff;
+  color: #333;
+  padding: 6px 14px;
+  border-radius: 25px;
+  outline: none;
+  transition: 0.3s;
+}
+
+header input[type="text"]:focus {
+  border-color: #ff2e2e;
+  box-shadow: 0 0 6px rgba(255, 102, 0, 0.5);
+}
