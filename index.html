@@ -263,5 +263,23 @@
       <p>&copy; 2025 Black. All rights reserved.</p>
       <p class="text-sm text-gray-400">Designed with 🖤 by Junior.</p>
     </footer>
-  </body>
+    
+    <script>
+  // Cart counter
+  let cartCount = 0;
+
+  // Listen for all "Add to Cart" buttons
+  const addToCartButtons = document.querySelectorAll("button");
+
+  addToCartButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      if (button.textContent.includes("Add to Cart")) {
+        cartCount++;
+        document.getElementById("cartCount").textContent = cartCount;
+      }
+    });
+  });
+</script>
+    
+ </body>
 </html>
